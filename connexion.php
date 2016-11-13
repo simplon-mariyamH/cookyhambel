@@ -1,3 +1,8 @@
+<?php 
+session_start();
+//je met ici le session start psk c'est pas que ma page d'identification mais aussi ma page d'accueil
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +33,7 @@
 					<CENTER>
 						<form method="post" action="cibleconnexion.php">
 							<p class="case">Login</p>
-							<p><input type="text" name="prenom" /></p>
+							<p><input type="text" name="mail" /></p>
 
 							<p class="case">Passeword</p>
 							<p><input type="password" name="mdp" /></p>
@@ -39,6 +44,7 @@
 					<p>
 						Pas encore inscrit ?
 						<a href="inscription.php"> Inscrivez-vous ici !</a>
+						<a href="deconnexion.php" target="_blank">Déconnexion</a>
 					</p>
 					<p>
 						Bien à vous, Cooky Ham !

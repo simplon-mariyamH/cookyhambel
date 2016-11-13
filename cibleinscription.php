@@ -1,4 +1,7 @@
 <?php 
+//session_start();
+//peut-être qu'il faudrait que j'enlève ce session_start(); psk je ne veux pas qu'ici ma session s'ouvre mais après il faudra se connecter donc faire un header location sur la page de connection ? ou faire qu'on soit déjà connecté à partir d'ici ?
+
 // Sous MAMP (Mac)
 try
 {

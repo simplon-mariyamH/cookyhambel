@@ -1,22 +1,3 @@
-<?php
-/*try
-{
-// On se connecte à MySQL
-$bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
-// En cas d'erreur, on affiche un message et on arrête tout
-die('Erreur : '.$e->getMessage());
-}
-$affichage = $bdd -> query('SELECT civilite, nom, prenom, mail FROM inscription');
-while ($donnees = $affichage -> fetch())
-{
-echo $donnees['civilite'] . ' ' . $donnees['nom'] . ' ' . $donnees['prenom'] . ' un mail de confirmation va vous être envoyé à l\'adresse suivante : ' . '<br />' . $donnees['mail'] . ' veuillez penser à regarder dans vos spams/courriers indésirables, si vous ne recevez aucun mail dans les 24h. <br /> Respectueusement Cooky Ham.';
-}
-
-$affichage -> closeCursor();*/
-?>
 <!DOCTYPE html>
 <html>
     <head>
