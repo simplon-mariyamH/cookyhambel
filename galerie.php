@@ -34,7 +34,7 @@
                             <!--partie qui glisse-->
                             <div class="slider">
                                 <figure>
-                                    <img src="13271536_10208070412510558_52333288_o.png" alt="" width="640" height="310" />
+                                    <img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="640" height="310" />
                                     <figcaption>Tiramisu
                                     </figcaption>
 
@@ -45,7 +45,7 @@
                                     </figcaption>
                                 </figure><!--
                                 --><figure>
-                                    <img src="13621514_10208434029480755_1119895296_o.jpg" alt="" width="640" height="310" />
+                                    <img src="13442597_477754999086826_992210677704155588_o.jpg" alt="" width="640" height="310" />
                                     <figcaption>Layer <em>(floral)</em> cake
                                     </figcaption>
 
