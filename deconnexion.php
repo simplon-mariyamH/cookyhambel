@@ -16,6 +16,7 @@ header ('location : page.php')
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="connexion.css">
 	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Pinyon+Script|Rouge+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="footer.css">
 	<title>formulaire d'acces aux codes secrets</title>
 </head>
 <body>
@@ -26,10 +27,10 @@ header ('location : page.php')
 	        <!-- Your content goes here -->
 	        	<div style="font-family:'Julius Sans One', sans-serif;">	<h1 style="font-family:'Julius Sans One', sans-serif;">Vous êtes bien déconnecté</h1> 
 	        		<h4 style="font-family:'Julius Sans One', sans-serif;"><a href="connexion.php">SE CONNECTER</a></h4>
-	        	</div>
+	        	</div>    	
+				<?php include("footer.php"); ?>
 	        </div>
 		</main>
-		<?php include("footer.php"); ?>
 	</div>
 
 </body>

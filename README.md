@@ -5,3 +5,5 @@ PB LIGNE 42 cibleconnexion.php
 HACHER LE MOT DE PASSE
 
 PERMISSION ADMIN
+
+htmlspecialchars

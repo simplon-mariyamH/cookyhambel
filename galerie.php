@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +10,7 @@
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <link rel="stylesheet" type="text/css" href="galerie.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="footer.css">
         <title>Galerie</title>
     </head>
     <body>
@@ -82,10 +86,10 @@
                             <li><img class="taille_image" src="1933429_445209415674718_5347501909220426766_o.jpg"></li>
                             <li><img class="taille_image" src="13621514_10208434029480755_1119895296_o.jpg"></li>
                         </ul>
-                    </div>
-                </div>-->
+                    </div>-->
+                </div>
+                <?php include("footer.php"); ?>
             </main>
             
-        <?php include("footer.php"); ?>
     </body>
 </html>

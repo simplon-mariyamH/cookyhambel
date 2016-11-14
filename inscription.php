@@ -7,6 +7,7 @@
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <link rel="stylesheet" type="text/css" href="inscription.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="footer.css">
         <title>Inscription</title>
     </head>
     <body>
@@ -162,9 +163,9 @@
 
                         </form>
                     </div>
+                    <?php include("footer.php"); ?>
                 </div>
             </main>
             
-        <?php include("footer.php"); ?>
     </body>
 </html>

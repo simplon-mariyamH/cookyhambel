@@ -9,6 +9,27 @@ if (!isset($_SESSION['mail'])){
 .demo-layout-waterfall {
     display: flex;
 }}
+  .connexion {
+    position: relative;
+    width: 20%;
+    height: 80%;
+    background-color: pink;
+    margin-right: 5%;
+    border: 1px solid grey;
+    border-radius: 5%;
+
+  }
+  a {
+    text-align: center;
+    position: relative;
+    padding: 3%;
+    text-decoration: none;
+    color: grey;
+  }
+
+  .connexion a i {
+    position: relative;
+  }
   </style>
 
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -18,6 +39,11 @@ if (!isset($_SESSION['mail'])){
         <!-- Title -->
         <span class="mdl-layout-title">Cooky Ham</span>
         <div class="mdl-layout-spacer"></div>
+        <div class="connexion">
+          <a href="connexion.php">Se connecter
+            <i class="material-icons">lock_outline</i>
+          </a>
+        </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
           <label class="mdl-button mdl-js-button mdl-button--icon"
@@ -59,13 +85,11 @@ if (!isset($_SESSION['mail'])){
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
         <a class="mdl-navigation__link" href="connexion.php">Connexion/Inscription</a><!-- disparait une fois connecter / déconnexion quand connecté -->
-        <a class="mdl-navigation__link" href="">Histoire</a>
+        <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
         <a class="mdl-navigation__link" href="produits.php">Produits</a>
-        <a class="mdl-navigation__link" href="galerie.php">Galeries</a>
         <a class="mdl-navigation__link" href="panier.php">Panier</a>
-        <a class="mdl-navigation__link" href="">Historique</a><!-- apparait une fois connecter--> 
         <a class="mdl-navigation__link" href="">Livre d'or</a> 
-        <a class="mdl-navigation__link" href="">Contacter</a>
+        <a class="mdl-navigation__link" href="">Nous contacter</a>
       </nav>
     </div>
 <?php 
@@ -125,14 +149,13 @@ else{
       </span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
-        <a class="mdl-navigation__link" href="deconnexion.php">Déconnexion/Inscription</a><!--disparait une fois connecter / déconnexion quand connecté -->
-        <a class="mdl-navigation__link" href="">Histoire</a>
+        <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
         <a class="mdl-navigation__link" href="produits.php">Produits</a>
-        <a class="mdl-navigation__link" href="galerie.php">Galeries</a>
         <a class="mdl-navigation__link" href="panier.php">Panier</a>
         <a class="mdl-navigation__link" href="">Historique</a><!-- apparait une fois connecter--> 
         <a class="mdl-navigation__link" href="">Livre d'or</a> 
         <a class="mdl-navigation__link" href="">Contacter</a>
+        <a class="mdl-navigation__link" href="deconnexion.php">Déconnexion</a>
       </nav>
     </div>
 <?php

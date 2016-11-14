@@ -14,6 +14,7 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="connexion.css">
 	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Pinyon+Script|Rouge+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="footer.css">
 	<title>formulaire d'acces aux codes secrets</title>
 </head>
 <body>
@@ -22,6 +23,9 @@ session_start();
 		<main class="mdl-layout__content">
 	        <div class="page-content">
 	        <!-- Your content goes here -->
+	        <?php
+			if (!isset($_SESSION['mail'])){
+			?>
 				<h4 style="font-family:'Julius Sans One', sans-serif;">
 					Service de tiramisu pour professionnels depuis 2007
 				</h4>
@@ -50,9 +54,17 @@ session_start();
 						Bien à vous, Cooky Ham !
 					</p>
 				</div>
+				<?php 
+				}else{ echo "Bienvenue " . $_SESSION['mail'];
+				?>
+
+
+				<?php 
+				} 
+				?>
+				<?php include("footer.php"); ?>
 			</div>
 		</main>
-		<?php include("footer.php"); ?>
 	</div>
 
 </body>
