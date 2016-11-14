@@ -40,6 +40,9 @@ if (!isset($_SESSION['mail'])){
     top: 3%;
   }
 
+
+
+
   </style>
 
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -47,10 +50,13 @@ if (!isset($_SESSION['mail'])){
       <!-- Top row, always visible -->
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">Cooky Ham</span>
+        <span class="mdl-layout-title" style="font-family:'Julius Sans One', sans-serif; font-size: 2em;">
+          <em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">H</em>am
+        </span>
         <div class="mdl-layout-spacer"></div>
+         
         <div class="connexion">
-          <a href="connexion.php">Se connecter</a>
+          <a href="connexion.php">Connexion</a>
             <i class="material-icons">lock_outline</i>
           
         </div>
@@ -105,10 +111,49 @@ if (!isset($_SESSION['mail'])){
 }
 else{
 ?>
-   <style>
+   
+  <style>
   .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
     padding-right: 0;
   }
+  @media screen and (max-width: 1024px){
+.demo-layout-waterfall {
+    display: flex;
+}}
+  .connexion {
+    position: relative;
+    width: 20%;
+    height: 70%;
+    background-color: #cc004e;
+    margin-right: 5%;
+    border: 1px solid grey;
+    border-radius: 5%;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+
+  }
+  .connexion a {
+    text-align: center;
+    position: relative;
+    padding: 3%;
+    text-decoration: none;
+    color: black;
+    top: -11%;
+    font-size: 1.2em;
+  }
+
+  .connexion i.material-icons {
+    text-align: center;
+    position: relative;
+    padding: 3%;
+    text-decoration: none;
+    color: black;
+    top: 3%;
+  }
+
+
+
+
   </style>
 
   <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
@@ -116,8 +161,17 @@ else{
       <!-- Top row, always visible -->
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">Cooky Ham</span>
+        <span class="mdl-layout-title" style="font-family:'Julius Sans One', sans-serif; font-size: 2em;">
+          <em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">H</em>am
+        </span>
         <div class="mdl-layout-spacer"></div>
+        
+        <div class="connexion">
+          <a href="deconnexion.php">Déconnexion</a>
+            <i class="material-icons">lock_open</i>
+          
+        </div>
+        
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
           <label class="mdl-button mdl-js-button mdl-button--icon"
@@ -137,7 +191,6 @@ else{
         <nav class="mdl-navigation">
 
           <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
-          <a class="mdl-navigation__link" href="deconnexion.php">Déconnexion</a><!-- déconnexion quand connecté -->
           <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->

@@ -26,7 +26,7 @@ header ('location : page.php')
 	        <div class="page-content">
 	        <!-- Your content goes here -->
 	        	<div style="font-family:'Julius Sans One', sans-serif;">	<h1 style="font-family:'Julius Sans One', sans-serif;">Vous êtes bien déconnecté</h1> 
-	        		<h4 style="font-family:'Julius Sans One', sans-serif;"><a href="connexion.php">SE CONNECTER</a></h4>
+	        		<!--<h4 style="font-family:'Julius Sans One', sans-serif;"><a href="connexion.php">SE CONNECTER</a></h4>-->
 	        	</div>    	
 				<?php include("footer.php"); ?>
 	        </div>

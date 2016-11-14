@@ -35,7 +35,7 @@ if ((isset($_POST['mail']) AND !empty($_POST['mail'])) AND (isset($_POST['mdp'])
 		//echo 'Bienvenue ' . $_SESSION['mail'];
 
 		// puis on le redirige vers la page d'accueil
-		echo '<meta http-equiv="refresh" content="0;URL=produits.php">';
+		echo '<meta http-equiv="refresh" content="0;URL=connexion.php">';
 
 
 		//MON HEADER LOCATION N'A PAS VOULU FONCTIONNER POURQUOI ? CA ME RETOURNE A LA MEME PAGE AU LIEU DE LA PAGE 6 !!! 
