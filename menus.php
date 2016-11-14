@@ -12,24 +12,34 @@ if (!isset($_SESSION['mail'])){
   .connexion {
     position: relative;
     width: 20%;
-    height: 80%;
-    background-color: pink;
+    height: 70%;
+    background-color: #cc004e;
     margin-right: 5%;
     border: 1px solid grey;
     border-radius: 5%;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
 
   }
-  a {
+  .connexion a {
     text-align: center;
     position: relative;
     padding: 3%;
     text-decoration: none;
-    color: grey;
+    color: black;
+    top: -11%;
+    font-size: 1.2em;
   }
 
-  .connexion a i {
+  .connexion i.material-icons {
+    text-align: center;
     position: relative;
+    padding: 3%;
+    text-decoration: none;
+    color: black;
+    top: 3%;
   }
+
   </style>
 
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -40,9 +50,9 @@ if (!isset($_SESSION['mail'])){
         <span class="mdl-layout-title">Cooky Ham</span>
         <div class="mdl-layout-spacer"></div>
         <div class="connexion">
-          <a href="connexion.php">Se connecter
+          <a href="connexion.php">Se connecter</a>
             <i class="material-icons">lock_outline</i>
-          </a>
+          
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
@@ -63,7 +73,6 @@ if (!isset($_SESSION['mail'])){
         <nav class="mdl-navigation">
 
           <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
-          <a class="mdl-navigation__link" href="connexion.php">Connexion</a><!-- déconnexion quand connecté -->
           <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
