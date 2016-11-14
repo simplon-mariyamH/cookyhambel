@@ -46,7 +46,7 @@
                                 </figure><!--
                                 --><figure>
                                     <img src="13442597_477754999086826_992210677704155588_o.jpg" alt="" width="640" height="310" />
-                                    <figcaption>Layer <em>(floral)</em> cake
+                                    <figcaption>Macaron <em></em>
                                     </figcaption>
 
                                 </figure><!--

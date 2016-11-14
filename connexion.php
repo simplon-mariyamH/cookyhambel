@@ -43,8 +43,8 @@ session_start();
 					</CENTER>
 					<p>
 						Pas encore inscrit ?
-						<a href="inscription.php"> Inscrivez-vous ici !</a>
-						<a href="deconnexion.php" target="_blank">Déconnexion</a>
+						<a href="inscription.php"> INSCRISVEZ-VOUS ICI !</a>
+						<!--<p><a href="deconnexion.php" target="_blank">Déconnexion</a></p>-->
 					</p>
 					<p>
 						Bien à vous, Cooky Ham !
