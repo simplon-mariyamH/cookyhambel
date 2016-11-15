@@ -29,7 +29,7 @@
 	                            <h4>Personnel</h4>
 	                        </div>
 	                        <form method="post" action="cibleinscription.php">
-	                            Civilité : 
+	                            <p id="civilite"><span class="civilite">Civilité : </span>
 	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
 	                                <input type="radio" id="option-1" class="mdl-radio__button" name="civilite" value="Monsieur" checked>
 	                                <span class="mdl-radio__label">Monsieur</span>
@@ -104,7 +104,7 @@
 	                        </form>
 	                    </div>
 
-                        <div class="section_form section2">
+                        <div class="section_form2">
 	                        <div class="subtitle">
                                 <h4>Professionnel</h4>
                             </div>
@@ -166,9 +166,9 @@
                         	<input class="btn" type="submit" name="submit" value="Valider">
                         </p>
                     </div>
-                    <?php include("footer.php"); ?>
                 </div>
             </main>
-            
+        
+            <?php include("footer.php"); ?>
     </body>
 </html>

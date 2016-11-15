@@ -14,7 +14,6 @@ if (!isset($_SESSION['mail'])){
     width: 20%;
     height: 70%;
     background-color: #cc004e;
-    margin-right: -3%;
     border: 1px solid grey;
     border-radius: 5%;
     opacity: 0.5;
@@ -83,9 +82,9 @@ if (!isset($_SESSION['mail'])){
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
           <!-- Number badge -->
-          <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
+          <!--<a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>-->
 
-          <a class="mdl-navigation__link" href="">Livre d'or</a>
+          <a class="mdl-navigation__link" href="livredor.php">Livre d'or</a>
         </nav>
       </div>
     </header>
@@ -102,7 +101,7 @@ if (!isset($_SESSION['mail'])){
         <a class="mdl-navigation__link" href="connexion.php">Connexion</a>/<a class="mdl-navigation__link" href="inscription.php">Inscription</a><!-- disparait une fois connecter / déconnexion quand connecté -->
         <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
         <a class="mdl-navigation__link" href="produits.php">Produits</a>
-        <a class="mdl-navigation__link" href="panier.php">Panier</a>
+        <!--<a class="mdl-navigation__link" href="panier.php">Panier</a>-->
         <a class="mdl-navigation__link" href="">Livre d'or</a> 
         <a class="mdl-navigation__link" href="">Nous contacter</a>
       </nav>
@@ -197,7 +196,7 @@ else{
           <!-- Number badge -->
           <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
 
-          <a class="mdl-navigation__link" href="">Livre d'or</a>
+          <a class="mdl-navigation__link" href="livredor.php">Livre d'or</a>
         </nav>
       </div>
     </header>

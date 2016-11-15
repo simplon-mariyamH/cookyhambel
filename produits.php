@@ -30,7 +30,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               all task 1,30€<br>
-                              <img src="13474988_482261608636165_5975979614976311637_o.jpg" alt="" width="140" height="110">
+                              <img src="13474988_482261608636165_5975979614976311637_o.jpg" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -47,7 +47,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               Kinder Bueno 1,30€<br>
-                              <img src="img2.png" alt="" width="140" height="110">
+                              <img src="img2.png" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -64,7 +64,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               façon fraisier 1,30€<br>
-                              <img src="13271536_10208070412510558_52333288_o.png" alt="" width="140" height="110">
+                              <img src="13271536_10208070412510558_52333288_o.png" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -82,7 +82,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               Macaron 1,30€<br>
-                              <img src="13288020_10208069692532559_1416750715_o.png" alt="" width="140" height="110">
+                              <img src="13288020_10208069692532559_1416750715_o.png" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -99,7 +99,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               all task 1,30€<br>
-                              <img src="14670738_523885507807108_8995894254032662050_n.jpg" alt="" width="140" height="110">
+                              <img src="14670738_523885507807108_8995894254032662050_n.jpg" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -116,7 +116,7 @@ $DB = new DB();
                             <h4>
                               Tiramisu<br>
                               all task 1,30€<br>
-                              <img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="140" height="110">
+                              <img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="60" height="70">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
@@ -140,13 +140,13 @@ $DB = new DB();
                         </p>
                         <figure>
                             <p>TIRAMISU GOUT :</p>
-                            <figcaption><img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="140" height="110"></figcaption>
+                            <figcaption><img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="60" height="70"></figcaption>
                             <p>TIRAMISU GOUT :</p>
-                            <figcaption><img src="13271536_10208070412510558_52333288_o.png" alt="" width="140" height="110"></figcaption>
+                            <figcaption><img src="13271536_10208070412510558_52333288_o.png" alt="" width="60" height="70"></figcaption>
                             <p>TIRAMISU GOUT :</p>
-                            <figcaption><img src="img2.png" alt="" width="140" height="110"></figcaption>
+                            <figcaption><img src="img2.png" alt="" width="60" height="70"></figcaption>
                             <p>TIRAMISU GOUT :</p>
-                            <figcaption><img src="13288020_10208069692532559_1416750715_o.png" alt="" width="140" height="110"></figcaption>        
+                            <figcaption><img src="13288020_10208069692532559_1416750715_o.png" alt="" width="60" height="70"></figcaption>        
                         </figure>
                     </div>-->
 
@@ -159,13 +159,10 @@ $DB = new DB();
                             <?php $produits=$DB->query('SELECT * FROM produits')?>
                             <?php foreach ($produits as $produit): ?>
                             <?php endforeach ?>
-
-                            
-                            <?php include("footer.php"); ?>
-                        
                 </div>
             </main>
             
+                    <?php include("footer.php"); ?>
         
     </body>
 </html>

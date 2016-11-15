@@ -1,3 +1,11 @@
+a {
+	font-size: 1em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
 .produits {
 	position: relative;
 	margin: 0 auto;
@@ -60,8 +68,8 @@ p {
 }
 
 .demo-card-event.mdl-card {
-  width: 256px;
-  height: 256px;
+  width: 200px;
+  height: 200px;
   background: #999597;
 }
 .demo-card-event > .mdl-card__actions {
