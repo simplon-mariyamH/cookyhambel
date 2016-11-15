@@ -14,7 +14,7 @@ if (!isset($_SESSION['mail'])){
     width: 20%;
     height: 70%;
     background-color: #cc004e;
-    margin-right: 5%;
+    margin-right: -3%;
     border: 1px solid grey;
     border-radius: 5%;
     opacity: 0.5;
@@ -45,7 +45,7 @@ if (!isset($_SESSION['mail'])){
 
   </style>
 
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div id="haut" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header mdl-layout__header--waterfall">
       <!-- Top row, always visible -->
       <div class="mdl-layout__header-row">
@@ -62,10 +62,10 @@ if (!isset($_SESSION['mail'])){
         </div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
-          <label class="mdl-button mdl-js-button mdl-button--icon"
+          <!--<label class="mdl-button mdl-js-button mdl-button--icon"
                  for="waterfall-exp">
             <i class="material-icons">search</i>
-          </label>
+          </label>-->
           <div class="mdl-textfield__expandable-holder">
             <input class="mdl-textfield__input" type="text" name="sample"
                    id="waterfall-exp">
@@ -83,7 +83,7 @@ if (!isset($_SESSION['mail'])){
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
           <!-- Number badge -->
-          <span class="mdl-badge" data-badge="4" href="panier.php">Panier</span>
+          <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
 
           <a class="mdl-navigation__link" href="">Livre d'or</a>
         </nav>
@@ -99,7 +99,7 @@ if (!isset($_SESSION['mail'])){
       </span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
-        <a class="mdl-navigation__link" href="connexion.php">Connexion/Inscription</a><!-- disparait une fois connecter / déconnexion quand connecté -->
+        <a class="mdl-navigation__link" href="connexion.php">Connexion</a>/<a class="mdl-navigation__link" href="inscription.php">Inscription</a><!-- disparait une fois connecter / déconnexion quand connecté -->
         <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
         <a class="mdl-navigation__link" href="produits.php">Produits</a>
         <a class="mdl-navigation__link" href="panier.php">Panier</a>
@@ -125,7 +125,7 @@ else{
     width: 20%;
     height: 70%;
     background-color: #cc004e;
-    margin-right: 5%;
+    margin-right: -3%;
     border: 1px solid grey;
     border-radius: 5%;
     opacity: 0.5;
@@ -174,10 +174,10 @@ else{
         
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                     mdl-textfield--floating-label mdl-textfield--align-right">
-          <label class="mdl-button mdl-js-button mdl-button--icon"
+          <!--<label class="mdl-button mdl-js-button mdl-button--icon"
                  for="waterfall-exp">
             <i class="material-icons">search</i>
-          </label>
+          </label>-->
           <div class="mdl-textfield__expandable-holder">
             <input class="mdl-textfield__input" type="text" name="sample"
                    id="waterfall-exp">
@@ -195,7 +195,7 @@ else{
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
           <!-- Number badge -->
-          <span class="mdl-badge" data-badge="4" href="panier.php">Panier</span>
+          <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
 
           <a class="mdl-navigation__link" href="">Livre d'or</a>
         </nav>

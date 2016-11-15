@@ -25,7 +25,8 @@ header ('location : page.php')
 		<main class="mdl-layout__content">
 	        <div class="page-content">
 	        <!-- Your content goes here -->
-	        	<div style="font-family:'Julius Sans One', sans-serif;">	<h1 style="font-family:'Julius Sans One', sans-serif;">Vous êtes bien déconnecté</h1> 
+	        	<div style="font-family:'Julius Sans One', sans-serif; margin-top: 5%;">	<h1 style="font-family:'Julius Sans One', sans-serif;">Vous êtes bien déconnecté</h1> 
+	        	<h2 style="font-family:'Julius Sans One', sans-serif;">A bientôt !</h2>
 	        		<!--<h4 style="font-family:'Julius Sans One', sans-serif;"><a href="connexion.php">SE CONNECTER</a></h4>-->
 	        	</div>    	
 				<?php include("footer.php"); ?>

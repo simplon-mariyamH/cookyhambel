@@ -26,8 +26,10 @@
       <ul class="mdl-mini-footer__link-list">
         <li><a href="#">Help</a></li>
         <li><a href="#">Privacy & Terms</a></li>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Haut de page</a></li>
+        <li><a href="connexion.php">Accueil</a></li>
+        <li><a href="#haut">Haut de page</a></li>
+        <li><a href="https://www.facebook.com/Cooky-Ham-309749012554093/?fref=ts" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/cooky.ham" target="_blank">Instagram</a></li>
       </ul>
     </div>
   </footer>
