@@ -16,7 +16,7 @@ $req -> execute(array(
 
 echo '<body onLoad="alert(\'Vos produits ont bien été ajouté au panier !\')">'; 
 // puis on le redirige vers la page d'accueil
-echo '<meta http-equiv="refresh" content="0;URL=panier.php">';
+echo '<meta http-equiv="refresh" content="0;URL=commande.php">';
 
 	
 } else {

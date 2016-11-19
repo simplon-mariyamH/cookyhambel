@@ -192,6 +192,7 @@ else{
           <a class="mdl-navigation__link" href="connexion.php">Accueil</a>
           <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
           <a class="mdl-navigation__link" href="produits.php">Produits</a>
+          <a class="mdl-navigation__link" href="commande.php">Commander</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
           <!-- Number badge -->
           <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
@@ -213,6 +214,7 @@ else{
         <a class="mdl-navigation__link" href="galerie.php">Galerie</a>
         <a class="mdl-navigation__link" href="produits.php">Produits</a>
         <a class="mdl-navigation__link" href="panier.php">Panier</a>
+        <a class="mdl-navigation__link" href="commande.php">Commander</a>
         <a class="mdl-navigation__link" href="">Historique</a><!-- apparait une fois connecter--> 
         <a class="mdl-navigation__link" href="">Livre d'or</a> 
         <a class="mdl-navigation__link" href="">Contacter</a>

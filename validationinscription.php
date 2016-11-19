@@ -27,16 +27,18 @@
 				// En cas d'erreur, on affiche un message et on arrête tout
 				die('Erreur : '.$e->getMessage());
 				}
-				$affichage = $bdd -> query('SELECT civilite, nom, prenom, mail FROM inscription');
-				while ($donnees = $affichage -> fetch())
-				{
+				$affichage = $bdd -> query('SELECT * FROM inscription ORDER BY id DESC LIMIT 0, 1');
+
+				$donnees = $affichage -> fetch();
+
+				
 				echo $donnees['civilite'] . ' ' . $donnees['nom'] . ' ' . $donnees['prenom'] ?>
 				<p>un mail de confirmation va vous être envoyé à l'adresse suivante : </p>
-				<?php $donnees['mail'] ?>
+				<?php echo $donnees['mail']; ?>
 				<p>veuillez penser à regarder dans vos spams/courriers indésirables, si vous ne recevez aucun mail dans les 24h.</p> 
 				<p>Respectueusement Cooky Ham.</p>
 				<?php
-				}
+				
 
 				$affichage -> closeCursor();
 			?>

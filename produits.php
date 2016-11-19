@@ -40,7 +40,7 @@ $DB = new DB();
                               </form> -->
                             </a>
                             <div class="mdl-layout-spacer"></div>
-                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
+                            <a href="commande.php"><i class="material-icons">shopping_basket</i></a>
                             <!-- <form method="post" action="cibleproduits.php">
                                  <p>
                                     <label for="qte">Qté</label><br />
@@ -71,7 +71,7 @@ $DB = new DB();
                                DECOUVRIR
                             </a>
                             <div class="mdl-layout-spacer"></div>
-                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
+                            <a href="commande.php"><i class="material-icons">shopping_basket</i></a>
                           </div>
                         </div>
 
@@ -87,7 +87,7 @@ $DB = new DB();
                                DECOUVRIR
                             </a>
                             <div class="mdl-layout-spacer"></div>
-                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
+                            <a href="commande.php"><i class="material-icons">shopping_basket</i></a>
                           </div>
                         </div>
                     </div>
@@ -124,9 +124,9 @@ $DB = new DB();
 
 
 
-                            <?php $produits=$DB->query('SELECT * FROM produits')?>
+                            <!-- <?php $produits=$DB->query('SELECT * FROM produits')?>
                             <?php foreach ($produits as $produit): ?>
-                            <?php endforeach ?>
+                            <?php endforeach ?> -->
                 </div>
             </main>
             
