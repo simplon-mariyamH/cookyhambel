@@ -68,12 +68,12 @@ body {
 	margin-left: 29%;
 }
 
-.civilite {
+.civilite_class {
 	font-family: Roboto;
 	font-size: 1.35em;
 }
 
-#civilite {
+#civilite_id {
 	position: relative;
 	margin-top: 5%;
 }

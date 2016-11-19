@@ -18,7 +18,6 @@ session_start();
 	<title>formulaire d'acces aux codes secrets</title>
 </head>
 <body>
-
 	<?php include("menus.php"); ?>
 		<main class="mdl-layout__content">
 	        <div class="page-content">

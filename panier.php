@@ -19,8 +19,18 @@ session_start();
             <main class="mdl-layout__content">
                 <div class="page-content">
                 <!-- Your content goes here -->
+                <?php 
 
-                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                  include("database.php");
+
+                $req=$bdd->query('SELECT nom_produit, quantite, gout, prix FROM articles');
+                while ($donnees = $req->fetch()) {
+                  echo 'les produits sont :' . $donnees['nom_produit'] . $donnees['quantite'] . $donnees['gout'] . ' au prix de ' . $donnees['prix'] . '<br />';
+
+                }
+
+                ?>
+                <!-- <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
                   <thead>
                     <tr>
                       <th class="mdl-data-table__cell--non-numeric">Tiramisu Goût</th>
@@ -30,7 +40,8 @@ session_start();
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="mdl-data-table__cell--non-numeric">Kinder Bueno</td>
+                      <td class="mdl-data-table__cell--non-numeric">Kinder Bueno
+</td>
                       <td>25</td>
                       <td>1,30€</td>
                     </tr>
@@ -45,7 +56,10 @@ session_start();
                       <td>1,30€</td>
                     </tr>
                   </tbody>
-                </table>
+                </table> -->
+                <?php
+                $req->closeCursor();
+                ?>
                 <?php include("footer.php"); ?>
                 </div>
             </main>

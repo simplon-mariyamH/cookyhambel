@@ -34,11 +34,29 @@ $DB = new DB();
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
-                            </a>
+                            <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> -->
+                              <form method="post" action="cibleproduits.php">
+                              <input type="submit" name="ajout_panier" value="Ajouter au panier">
+<!-- 
+                              </form> -->
+                            <!-- </a> -->
                             <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
+                            <!-- <i class="material-icons">event</i> --><!-- 
+                              <form method="post" action="cibleproduits.php"> -->
+                                <p>
+                                    <label for="qte">Qté</label><br />
+                                    <select name="qte" id="qte">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                    </select>
+                                    <!-- <input type="text" name="number"> -->
+                                </p>
+                              </form>
                           </div>
                         </div>
 

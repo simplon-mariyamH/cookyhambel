@@ -28,20 +28,23 @@
 	                        <div class="subtitle">
 	                            <h4>Personnel</h4>
 	                        </div>
+
 	                        <form method="post" action="cibleinscription.php">
-	                            <p id="civilite"><span class="civilite">Civilité : </span>
-	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-	                                <input type="radio" id="option-1" class="mdl-radio__button" name="civilite" value="Monsieur" checked>
-	                                <span class="mdl-radio__label">Monsieur</span>
-	                            </label>
-	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-	                                <input type="radio" id="option-2" class="mdl-radio__button" name="civilite" value="Madame">
-	                                <span class="mdl-radio__label">Madame</span>
-	                            </label>
-	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-	                                <input type="radio" id="option-3" class="mdl-radio__button" name="civilite" value="Mademoiselle">
-	                                <span class="mdl-radio__label">Mademoiselle</span>
-	                            </label></p>
+	                            <p id="civilite_id">
+		                            <span class="civilite_class">Civilité : </span>
+		                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+		                                <input type="radio" id="option-1" class="mdl-radio__button" name="civilite" value="Monsieur" checked>
+		                                <span class="mdl-radio__label">Monsieur</span>
+		                            </label>
+		                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+		                                <input type="radio" id="option-2" class="mdl-radio__button" name="civilite" value="Madame">
+		                                <span class="mdl-radio__label">Madame</span>
+		                            </label>
+		                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+		                                <input type="radio" id="option-3" class="mdl-radio__button" name="civilite" value="Mademoiselle">
+		                                <span class="mdl-radio__label">Mademoiselle</span>
+		                            </label>
+	                            </p>
 	                            
 	                            <p>
 	                            	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -101,14 +104,14 @@
 	                                	<span class="mdl-textfield__error">Input is not a number!</span>
 	                            	</div>
 	                            </p>
-	                        </form>
+	                        
 	                    </div>
 
                         <div class="section_form2">
 	                        <div class="subtitle">
                                 <h4>Professionnel</h4>
                             </div>
-                            <form method="post" action="cibleinscription.php">
+                            
 	                            <p>
 	                            	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 	                                	<input class="mdl-textfield__input" type="text" name="nom_ets" id="sample3">
@@ -160,11 +163,12 @@
 	                                    <span class="mdl-textfield__error">Input is not a number!</span>
 	                                </div>
 	                            </p>
+	                            <p>
+                        			<input class="btn" type="submit" name="submit" value="Valider">
+                        		</p>
                             </form>
                         </div>	
-                        <p>
-                        	<input class="btn" type="submit" name="submit" value="Valider">
-                        </p>
+                        
                     </div>
                 </div>
             </main>

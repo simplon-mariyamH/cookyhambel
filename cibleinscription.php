@@ -1,18 +1,20 @@
 <?php 
 //session_start();
 //peut-être qu'il faudrait que j'enlève ce session_start(); psk je ne veux pas qu'ici ma session s'ouvre mais après il faudra se connecter donc faire un header location sur la page de connection ? ou faire qu'on soit déjà connecté à partir d'ici ?
-
 // Sous MAMP (Mac)
-try
-{
+// try
+// {
     // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
+//     $bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+// }
+// catch(Exception $e)
+// {
     // En cas d'erreur, on affiche un message et on arrête tout
-        die('Erreur : '.$e->getMessage());
-}
+//         die('Erreur : '.$e->getMessage());
+// }
+
+
+include("database.php");
 // Si tout va bien, on peut continuer
 if ((isset($_POST['civilite']) AND $_POST['civilite']!=='') 
 	AND (isset($_POST['nom']) AND $_POST['nom']!=='') 
@@ -29,12 +31,7 @@ if ((isset($_POST['civilite']) AND $_POST['civilite']!=='')
 	AND (isset($_POST['adresse2']) AND $_POST['adresse2']!=='') 
 	AND (isset($_POST['numero2']) AND $_POST['numero2']!=='')
 	AND (isset($_POST['portable2']) AND $_POST['portable2']!==''))
-
-
-
-
 {
-
 $civilite = $_POST['civilite'];
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
@@ -50,14 +47,7 @@ $mail2 = $_POST['mail2'];
 $adresse2 = $_POST['adresse2'];
 $numero2 = $_POST['numero2'];
 $portable2 = $_POST['portable2'];
-
-
-
-
-
-
 $req = $bdd->prepare('INSERT INTO inscription (civilite, nom, prenom, mail, mdp, adresse, numero, portable, nom_ets, raison_sociale, siret, mail2, adresse2, numero2, portable2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-
 $req -> execute(array(
 	$civilite, 
 	$nom, 
@@ -80,6 +70,4 @@ header('Location: validationinscription.php');
 } else {
 	echo 'vous n\'avez pas renseigner tous les champs obligatoires, merci de renseigner tous les champs comportant un astérisque';
 }
-
-
 ?>

@@ -1,14 +1,16 @@
 <?php 
-try
-{
-    // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
-    // En cas d'erreur, on affiche un message et on arrête tout
-        die('Erreur : '.$e->getMessage());
-}
+// try
+// {
+//     // On se connecte à MySQL
+//     $bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+// }
+// catch(Exception $e)
+// {
+//     // En cas d'erreur, on affiche un message et on arrête tout
+//         die('Erreur : '.$e->getMessage());
+// }
+
+include("database.php");
 
 $login_valide = $_POST['mail'];
 $mdp_valide = $_POST['mdp'];
@@ -20,7 +22,7 @@ $req->execute(array(
 
 $donnees = $req->fetch();
 
-if ((isset($_POST['mail']) AND !empty($_POST['mail'])) AND (isset($_POST['mdp']) AND !empty($_POST['mail']))) {
+if ((isset($_POST['mail']) AND !empty(htmlspecialchars($_POST['mail']))) AND (isset($_POST['mdp']) AND !empty(htmlspecialchars($_POST['mdp'])))) {
 	if (!$donnees) {
 		// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
 		echo '<body onLoad="alert(\'Membre non reconnu...\')">';
