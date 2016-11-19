@@ -54,25 +54,14 @@ session_start();
 					</p>
 				</div>
 				<?php 
-				}else{ echo "Bienvenue " . $_SESSION['mail'];
-				?>
-
-				<h1>Espace Personnel</h1>
-				<!-- Image card -->
-				<div class="demo-card-image mdl-card mdl-shadow--2dp">
-				  <div class="mdl-card__title mdl-card--expand"></div>
-				  <div class="mdl-card__actions">
-				    <span class="demo-card-image__filename"><?php echo $_SESSION['mail']; ?></span>
-				  </div>
-				</div>
-
-				<?php 
+				}else{ 
+				   include("espace_membre.php");
 				} 
 				?>
 				<?php include("footer.php"); ?>
 			</div>
 		</main>
-	</div>
+	
 
 </body>
 </html>

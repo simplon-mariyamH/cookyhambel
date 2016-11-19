@@ -21,7 +21,7 @@ h4 {
 	font-size: 2em;
 }
 
-figure {
+/*figure {
 	position: relative;
 	padding: 2%;
 }
@@ -29,7 +29,7 @@ figure {
 figcaption {
 	position: relative;
 	padding: 2%;
-}
+}*/
 
 #deconnexion {
 	position: relative;
@@ -68,8 +68,8 @@ p {
 }
 
 .demo-card-event.mdl-card {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   background: #999597;
 }
 .demo-card-event > .mdl-card__actions {

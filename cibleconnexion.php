@@ -1,4 +1,5 @@
 <?php 
+session_start();
 // try
 // {
 //     // On se connecte à MySQL
@@ -15,10 +16,11 @@ include("database.php");
 $login_valide = $_POST['mail'];
 $mdp_valide = $_POST['mdp'];
 
-$req = $bdd->prepare('SELECT id FROM inscription WHERE mail = :mail AND mdp = :mdp');
+$req = $bdd->prepare('SELECT id, prenom, nom FROM inscription WHERE mail = :mail AND mdp = :mdp');
 $req->execute(array(
 	'mail' => $login_valide,
-	'mdp' => $mdp_valide));
+	'mdp' => $mdp_valide
+	));
 
 $donnees = $req->fetch();
 
@@ -30,9 +32,11 @@ if ((isset($_POST['mail']) AND !empty(htmlspecialchars($_POST['mail']))) AND (is
 		echo '<meta http-equiv="refresh" content="0;URL=connexion.php">';
 	}
 	else {
-		session_start();
+		
 		$_SESSION['id'] = $donnees['id'];
 		$_SESSION['mail'] = $login_valide;
+		$_SESSION ['nom'] = $donnees['nom'];
+		$_SESSION ['prenom'] = $donnees['prenom'];
 
 		//echo 'Bienvenue ' . $_SESSION['mail'];
 

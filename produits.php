@@ -15,7 +15,7 @@ $DB = new DB();
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Pinyon+Script|Rouge+Script" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="footer.css">
-        <title>Commande</title>
+        <title>Produits</title>
     </head>
     <body>
         
@@ -28,22 +28,21 @@ $DB = new DB();
                         <div class="demo-card-event mdl-card mdl-shadow--2dp">
                           <div class="mdl-card__title mdl-card--expand">
                             <h4>
-                              Tiramisu<br>
-                              all task 1,30€<br>
-                              <img src="13474988_482261608636165_5975979614976311637_o.jpg" alt="" width="60" height="70">
+                              Classiq'isu<br>
+                              <img src="img2.png" alt="" width="210" height="220">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
-                            <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> -->
-                              <form method="post" action="cibleproduits.php">
-                              <input type="submit" name="ajout_panier" value="Ajouter au panier">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="classiqisu.php">DECOUVRIR
+                              <!-- <form method="post" action="cibleproduits.php">
+                              <input type="submit" name="ajout_panier" value="Ajouter au panier"> -->
 <!-- 
                               </form> -->
-                            <!-- </a> -->
+                            </a>
                             <div class="mdl-layout-spacer"></div>
-                            <!-- <i class="material-icons">event</i> --><!-- 
-                              <form method="post" action="cibleproduits.php"> -->
-                                <p>
+                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
+                            <!-- <form method="post" action="cibleproduits.php">
+                                 <p>
                                     <label for="qte">Qté</label><br />
                                     <select name="qte" id="qte">
                                         <option value="3">3</option>
@@ -53,99 +52,50 @@ $DB = new DB();
                                         <option value="15">15</option>
                                         <option value="20">20</option>
                                         <option value="25">25</option>
-                                    </select>
-                                    <!-- <input type="text" name="number"> -->
+                                    </select> 
+                                    <input type="text" name="number">
                                 </p>
-                              </form>
+                              </form>-->
                           </div>
                         </div>
 
                         <div class="demo-card-event mdl-card mdl-shadow--2dp">
                           <div class="mdl-card__title mdl-card--expand">
                             <h4>
-                              Tiramisu<br>
-                              Kinder Bueno 1,30€<br>
-                              <img src="img2.png" alt="" width="60" height="70">
+                              Revisit'isu<br>
+                              <img src="13271536_10208070412510558_52333288_o.png" alt="" width="210" height="220">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="revisitisu.php">
+                               DECOUVRIR
                             </a>
                             <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
+                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
                           </div>
                         </div>
 
                         <div class="demo-card-event mdl-card mdl-shadow--2dp">
                           <div class="mdl-card__title mdl-card--expand">
                             <h4>
-                              Tiramisu<br>
-                              façon fraisier 1,30€<br>
-                              <img src="13271536_10208070412510558_52333288_o.png" alt="" width="60" height="70">
+                              Créat'isu<br>
+                              <img src="13288020_10208069692532559_1416750715_o.png" alt="" width="210" height="220">
                             </h4>
                           </div>
                           <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="creatisu.php">
+                               DECOUVRIR
                             </a>
                             <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
+                            <a href="panier.php"><i class="material-icons">shopping_basket</i></a>
                           </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-                          <div class="mdl-card__title mdl-card--expand">
-                            <h4>
-                              Tiramisu<br>
-                              Macaron 1,30€<br>
-                              <img src="13288020_10208069692532559_1416750715_o.png" alt="" width="60" height="70">
-                            </h4>
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
-                            </a>
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
-                          </div>
-                        </div>
+                   
 
-                        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-                          <div class="mdl-card__title mdl-card--expand">
-                            <h4>
-                              Tiramisu<br>
-                              all task 1,30€<br>
-                              <img src="14670738_523885507807108_8995894254032662050_n.jpg" alt="" width="60" height="70">
-                            </h4>
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
-                            </a>
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
-                          </div>
-                        </div>
-
-                        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-                          <div class="mdl-card__title mdl-card--expand">
-                            <h4>
-                              Tiramisu<br>
-                              all task 1,30€<br>
-                              <img src="13350534_477754972420162_2174232920113001969_o.jpg" alt="" width="60" height="70">
-                            </h4>
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                              Ajouter au panier
-                            </a>
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">event</i>
-                          </div>
-                        </div>
-                    </div>
+                        
+                        
+                  
 
 
 

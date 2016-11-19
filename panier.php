@@ -19,46 +19,94 @@ session_start();
             <main class="mdl-layout__content">
                 <div class="page-content">
                 <!-- Your content goes here -->
+
                 <?php 
 
                   include("database.php");
 
-                $req=$bdd->query('SELECT nom_produit, quantite, gout, prix FROM articles');
-                while ($donnees = $req->fetch()) {
-                  echo 'les produits sont :' . $donnees['nom_produit'] . $donnees['quantite'] . $donnees['gout'] . ' au prix de ' . $donnees['prix'] . '<br />';
+                // $req=$bdd->query('SELECT nom_produit, quantite, gout, prix FROM articles');
+                // while ($donnees = $req->fetch()) {
+                //   echo 'les produits sont :' . $donnees['nom_produit'] . $donnees['quantite'] . $donnees['gout'] . ' au prix de ' . $donnees['prix'] . '<br />';
 
-                }
+                // }
 
                 ?>
-                <!-- <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-                  <thead>
-                    <tr>
-                      <th class="mdl-data-table__cell--non-numeric">Tiramisu Goût</th>
-                      <th>Quantité</th>
-                      <th>Prix Unité TTC</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">Kinder Bueno
-</td>
-                      <td>25</td>
-                      <td>1,30€</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">Spéculos</td>
-                      <td>50</td>
-                      <td>1,30€</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">Oréo</td>
-                      <td>10</td>
-                      <td>1,30€</td>
-                    </tr>
-                  </tbody>
-                </table> -->
+                <form method="post" action="ciblepanier.php">
+                  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Tiramisu Goût</th>
+                        <th>Quantité</th>
+                        <th>Prix Unité TTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Kinder Bueno
+  </td>
+                        <td>
+                          <p>
+                            <label for="qte"></label><br />
+                            <select name="qte" id="qte">
+                              <option value="0">0</option>
+                              <option value="3">3</option>
+                              <option value="5">5</option>
+                              <option value="7">7</option>
+                              <option value="10">10</option>
+                              <option value="15">15</option>
+                              <option value="20">20</option>
+                              <option value="25">25</option>
+                            </select> 
+                          </p>
+                        </td>
+                        <td>1,30€</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Spéculos</td>
+                        <td>
+                          <p>
+                            <label for="qte"></label><br />
+                            <select name="qte" id="qte">
+                              <option value="0">0</option>
+                              <option value="3">3</option>
+                              <option value="5">5</option>
+                              <option value="7">7</option>
+                              <option value="10">10</option>
+                              <option value="15">15</option>
+                              <option value="20">20</option>
+                              <option value="25">25</option>
+                            </select> 
+                          </p>
+                        </td>
+                        <td>1,30€</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Oréo</td>
+                        <td>
+                          <p>
+                            <label for="qte"></label><br />
+                            <select name="qte" id="qte">
+                              <option value="0">0</option>
+                              <option value="3">3</option>
+                              <option value="5">5</option>
+                              <option value="7">7</option>
+                              <option value="10">10</option>
+                              <option value="15">15</option>
+                              <option value="20">20</option>
+                              <option value="25">25</option>
+                            </select> 
+                          </p>
+                        </td>
+                        <td>1,30€</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric"><input type="submit" name="valider" value="Valider"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
                 <?php
-                $req->closeCursor();
+                // $req->closeCursor();
                 ?>
                 <?php include("footer.php"); ?>
                 </div>
