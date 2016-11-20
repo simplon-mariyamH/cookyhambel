@@ -1,0 +1,53 @@
+#facture {
+	width: 75%;/*
+	border: 1px solid black;*/
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#entete {
+	position: relative;
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: space-between;
+}
+.titre{
+	position: relative;
+	text-align: center;
+}
+#cooky_ham {
+	position: relative;
+	margin: 5%;
+}
+
+#client {
+	position: relative;
+	margin: 5%;
+}
+
+.mdl-data-table {
+	position: relative;
+	width: 80%;
+}
+.mdl-data-table__cell--non-numeric {
+	position: relative;
+	width: 80%;
+}
+
+.mdl-data-table th{
+	position: relative;
+	width: 20%;
+	text-align: center;
+}
+
+.table {
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 15%;
+}
+/*
+#contenu {
+	position: relative;
+	text-align: center;
+}*/

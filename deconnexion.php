@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include('delete.php');
 session_unset();
 session_destroy();
 header ('location : page.php')

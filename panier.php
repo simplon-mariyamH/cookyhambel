@@ -26,15 +26,24 @@ session_start();
 
                 $req=$bdd->query('SELECT * FROM articles INNER JOIN gouts ON articles.id_gout = gouts.id');
                 while ($donnees = $req->fetch()) {
+                  $id_article = $donnees['id_article'];
+                  $qte = $donnees['quantite'];
+                  $nom_produit = $donnees['nom_produit'];
+                  $gout = $donnees['nom'];
+                  $prix = $donnees['prix'];
+
               
                 ?>
                 <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
                   <thead>
                     <tr>
-                      <th class="mdl-data-table__cell--non-numeric"> les produits sont :<?php echo $donnees['nom_produit']; ?></th>
-                      <th><?php echo $donnees['quantite']; ?></th>
-                      <th><?php echo $donnees['nom']; ?></th>
+                      <th class="mdl-data-table__cell--non-numeric"> les produits sont :<?php echo $nom_produit ?></th>
+                      <th><?php echo $qte  ?></th>
+                      <th><?php echo $gout ?></th>
                       <th>au prix de 1,30€ TTC</th>
+                      <th><a href="delete_panier.php?id=<?php echo $id_article ?> "> <button type="button" name="supprimer">Supprimer</button></a></th>
+                          <th><a href="commande.php"> <button type="button" name="ajouter">Ajouter</button></a></th>
+
                     </tr>
                   </thead>
                 </table>
@@ -44,7 +53,30 @@ session_start();
 
                 $req->closeCursor();
                 ?>
-                <p><a href="commande.php"><input type="button" name="retour" value="Retour à la page commande"></a></p>
+                <?php 
+                  $reponse = $bdd->query('SELECT SUM(quantite) AS cout_total FROM articles');
+
+                            while ($donnees = $reponse->fetch())
+                            {
+                              $total = $donnees['cout_total'];
+                ?>
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                  <thead>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">
+                      Total : 
+                      </th>
+                      <th><?php echo $total ?> tiramisus</th>
+                      <th><?php echo $total*1.3 ?>€ TTC</th>
+                    </tr>
+                  </thead>
+                </table>
+                <?php 
+                  }
+
+                  $reponse->closeCursor();
+                ?>
+                <p><a href="paiement.php"><button type="button" name="valider">Valider le panier et passer au paiement</button></a></p>
                 <?php include("footer.php"); ?>
                 </div>
             </main>
