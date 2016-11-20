@@ -47,7 +47,7 @@ session_start();
 					<p>
 						Pas encore inscrit ?
 						<a href="inscription.php"> INSCRISVEZ-VOUS ICI !</a>
-						<!--<p><a href="deconnexion.php" target="_blank">Déconnexion</a></p>-->
+						<p><a href="" target="_blank">Mot de passe oublié</a></p>
 					</p>
 					<p>
 						Bien à vous, Cooky Ham !

@@ -20,6 +20,7 @@ Admin -> voir tous les utilisateurs
 	  -> pouvoir supprimer un client
 	  -> voir les commandes du client
 	  -> voir son historique
+	  -> reçois des notifications
 
 User -> voir son historique de commande
 	 -> pouvoir supprimer modifier son compte

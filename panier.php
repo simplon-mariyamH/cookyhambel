@@ -40,9 +40,6 @@ session_start();
                 </table>
                 <?php 
 
-                  
-                     
-
                 }
 
                 $req->closeCursor();
