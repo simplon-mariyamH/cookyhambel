@@ -23,7 +23,7 @@ session_start();
                 <div id="facture">
 
                   <div class="mdl-card__title">
-                     <h2 class="titre">Paiement</h2>
+                    <h2 class="titre" style="font-family: 'Julius Sans One'; position: relative; margin-left: 5%;">Paiement</h2>
                   </div>
                   
                   <div id="entete">
@@ -35,8 +35,6 @@ session_start();
                          <div class="mdl-card__supporting-text"><?php echo $_SESSION['raison_sociale'] ?></div>
                          <div class="mdl-card__supporting-text">N° SIRET/SIREN : <?php echo $_SESSION['siret'] ?></div>
                          <div class="mdl-card__supporting-text"><?php echo $_SESSION['adresse2'] ?></div>
-                   <!--       <div class="mdl-card__supporting-text"><?php echo $_SESSION['ville']; ?></div>
-                       -->
                     </div>  
                     <div id="cooky_ham">
                       <div class="mdl-card__title">
@@ -61,8 +59,8 @@ session_start();
 
                 </div>
 
-                <p><a href="facture_paypal.php"><button type="button" name="paypal">Paiement en ligne via Paypal</button></a></p>
-                <p><a href="facture_espece.php"><button type="button" name="espèce">Paiement en espèce à la réception</button></a></p>
+                <p><a href="facture_paypal.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="paypal">Paiement en ligne via Paypal</button></a></p>
+                <p><a href="facture_espece.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="espèce">Paiement en espèce à la réception</button></a></p>
                 <!-- ENVOIE D'UN MAIL VERS MOI ET LUI -->
                 </div>
             </main>

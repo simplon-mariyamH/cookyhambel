@@ -58,8 +58,9 @@ session_start();
 				   include("espace_membre.php");
 				} 
 				?>
-				<?php include("footer.php"); ?>
 			</div>
+			
+				<?php include("footer.php"); ?>
 		</main>
 	
 

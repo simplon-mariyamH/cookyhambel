@@ -1,5 +1,65 @@
-.mdl-data-table {
+/*.mdl-data-table {
 	position: relative;
 	margin-left: 35%;
 	margin-top: 5%;
+}
+*/
+/*#facture {
+	width: 75%;
+	border: 1px solid black;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#entete {
+	position: relative;
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: space-between;
+}*/
+/*.titre{
+	position: relative;
+	text-align: center;
+}*/
+/*#cooky_ham {
+	position: relative;
+	margin: 5%;
+}
+
+#client {
+	position: relative;
+	margin: 5%;
+}*/
+
+.mdl-data-table {
+	position: relative;
+	width: 80%;
+}
+.mdl-data-table__cell--non-numeric {
+	position: relative;
+	width: 80%;
+}
+
+.mdl-data-table th{
+	position: relative;
+	width: 20%;
+	text-align: center;
+}
+
+.table {
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 15%;
+}
+
+#total {
+	position: relative;
+	width:29%;
+	text-align: center;
+}
+
+.total {
+	background: #c1c1c1;
+	color: white; 
 }

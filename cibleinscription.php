@@ -18,7 +18,7 @@ $civilite = $_POST['civilite'];
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $mail = $_POST['mail'];
-$mdp = $_POST['mdp'];
+$mdp = sha1('gz' . $_POST['mdp']);
 $numero = $_POST['numero'];
 $portable = $_POST['portable'];
 $raison_sociale = $_POST['raison_sociale'];
@@ -44,7 +44,7 @@ $req -> execute(array(
 
 include("mail.php");
 //=====Envoi de l'e-mail.
-mail($mail,$sujet,$message,$header);
+mail($mails,$sujet,$message,$header);
 //==========
 
 

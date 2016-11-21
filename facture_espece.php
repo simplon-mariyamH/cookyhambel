@@ -37,8 +37,6 @@ session_start();
                          <div class="mdl-card__supporting-text"><?php echo $_SESSION['raison_sociale'] ?></div>
                          <div class="mdl-card__supporting-text">N° SIRET/SIREN : <?php echo $_SESSION['siret'] ?></div>
                          <div class="mdl-card__supporting-text"><?php echo $_SESSION['adresse2'] ?></div>
-                   <!--       <div class="mdl-card__supporting-text"><?php echo $_SESSION['ville']; ?></div>
-                       -->
                     </div>  
                     <div id="cooky_ham">
                       <div class="mdl-card__title">
@@ -75,7 +73,7 @@ session_start();
                 ?>
                 </div>
 
-                <p><a href=""><button type="button" name="print">Imprimer</button></a></p>
+                <p><a href=""><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="print">Imprimer</button></a></p>
                 <!-- ENVOIE D'UN MAIL VERS MOI ET LUI -->
                 </div>
             </main>

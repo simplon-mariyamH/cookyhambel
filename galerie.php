@@ -17,9 +17,10 @@
     <body>
         
         <?php include("menus.php"); ?>
-            <main class="mdl-layout__content">
-                <div class="page-content">
-                <!-- Your content goes here -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+            <!-- Your content goes here -->
+                <div id="container">
                     <span id="sl_play" class="sl_command"></span>
                     <span id="sl_pause" class="sl_command"></span>
                      
@@ -70,27 +71,9 @@
                             <li><a title="Afficher la slide 4" href="#sl_i4">Slide 4</a></li>
                         </ul>
                     </section>
-
-
-
-
-
-                    <!--<div class="galerie">
-                        <ul>
-                            <li><img class="taille_image" src="13271536_10208070412510558_52333288_o.png"></li>
-                            <li><img class="taille_image" src="1933429_445209415674718_5347501909220426766_o.jpg"></li>
-                            <li><img class="taille_image" src="13621514_10208434029480755_1119895296_o.jpg"></li>
-                            <li><img class="taille_image" src="12038211_401204466741880_1955411010832614969_n.jpg"></li>
-                            <li><img class="taille_image" src="13350534_477754972420162_2174232920113001969_o.jpg"></li>
-                            <li><img class="taille_image" src="13442597_477754999086826_992210677704155588_o.jpg"></li>
-                            <li><img class="taille_image" src="13271536_10208070412510558_52333288_o.png"></li>
-                            <li><img class="taille_image" src="1933429_445209415674718_5347501909220426766_o.jpg"></li>
-                            <li><img class="taille_image" src="13621514_10208434029480755_1119895296_o.jpg"></li>
-                        </ul>
-                    </div>-->
                 </div>
-                <?php include("footer.php"); ?>
-            </main>
-            
-    </body>
+            </div>
+        </main>
+        <?php include("footer.php"); ?>
+   </body>
 </html>

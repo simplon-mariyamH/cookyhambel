@@ -13,11 +13,11 @@ if (!isset($_SESSION['mail'])){
     position: relative;
     width: 20%;
     height: 70%;
-    background-color: #cc004e;
+    background-color: #ce2c64;
     border: 1px solid grey;
     border-radius: 5%;
-    opacity: 0.5;
-    -webkit-opacity: 0.5;
+   /* opacity: 0.5;
+    -webkit-opacity: 0.5;*/
 
   }
   .connexion a {
@@ -50,7 +50,7 @@ if (!isset($_SESSION['mail'])){
       <div class="mdl-layout__header-row">
         <!-- Title -->
         <span class="mdl-layout-title" style="font-family:'Julius Sans One', sans-serif; font-size: 2em;">
-          <em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">H</em>am
+          <em style="font-size: 2em; color:#cc004e; font-family: 'Rouge Script';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Rouge Script';">H</em>am
         </span>
         <div class="mdl-layout-spacer"></div>
          
@@ -123,13 +123,13 @@ else{
     position: relative;
     width: 20%;
     height: 70%;
-    background-color: #cc004e;
+    background-color: #ce2c64;
     margin-right: -3%;
     border: 1px solid grey;
     border-radius: 5%;
-    opacity: 0.5;
+    /*opacity: 0.5;
     -webkit-opacity: 0.5;
-
+*/
   }
   .connexion a {
     text-align: center;
@@ -161,7 +161,7 @@ else{
       <div class="mdl-layout__header-row">
         <!-- Title -->
         <span class="mdl-layout-title" style="font-family:'Julius Sans One', sans-serif; font-size: 2em;">
-          <em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Julius Sans One';">H</em>am
+          <em style="font-size: 2em; color:#cc004e; font-family: 'Rouge Script';">C</em>ooky<em style="font-size: 1.7em; color:#cc004e; font-family: 'Rouge Script';">H</em>am
         </span>
         <div class="mdl-layout-spacer"></div>
         

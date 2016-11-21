@@ -6,7 +6,19 @@ body {
 	font-family: Roboto;
 }
 
-.subtitle {    
+
+/*.flex {
+	position: relative;
+	display: inline-flex;
+	flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0;
+}*/
+
+
+
+
+/*.subtitle {    
 	border: none;
     color: white;
     width: 400px;
@@ -16,12 +28,12 @@ body {
     -webkit-opacity: 0.7;
     margin-left : -20px;
     padding-left: 20px;
-}
+}*/
 
 .container {
 	margin-left: 20px;
 	position: relative;
-	display: inline-flex;
+	display:flex;
 	justify-content: center;
 	justify-content: space-around;
 }
@@ -38,11 +50,15 @@ body {
     padding-left: 20px;
 }
 
+.info {
+	position: relative;
+	padding-left: 20px;}
+
 /*.mdl-textfield__label {
 	color:#262626;
 }*/
 
-.btn {
+/*.btn {
 	padding: 17px 35px;
 	opacity: 0.7;
 	-webkit-opacity: 0.7;
@@ -51,29 +67,27 @@ body {
 	color: white;
 	border-radius: 4px;
 	border: none;
-	background-color: #cc004e;
+	background-color: #ff025a;
 	position: relative;
-	margin-left: -135px;
-	margin-top: 650px;
-}
+}*/
 
-.section_form {
+/*.section_form {
 	position: relative;
-	margin-left: 25%;
+	margin-left: 5%;
 }
 
 .section_form2 {
 	position: relative;
 	margin-right: -32%;
 	margin-left: 29%;
-}
+}*/
 
-.civilite_class {
+/*.civilite_class {
 	font-family: Roboto;
 	font-size: 1.35em;
 }
-
-#civilite_id {
+*/
+/*#civilite_id {
 	position: relative;
 	margin-top: 5%;
-}
+}*/

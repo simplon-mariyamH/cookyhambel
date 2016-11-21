@@ -62,7 +62,7 @@ session_start();
                   </div>
 
                 </div>
-                <p><a href=""><button type="button" name="print">Imprimer</button></a></p>
+                <p><a href=""><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="print">Imprimer</button></a></p>
                 <!-- ENVOIE D'UN MAIL VERS MOI ET LUI -->
                 </div>
             </main>
