@@ -86,14 +86,11 @@ session_start();
         Total : 
         </th>
         <th style="color: #c1c1c1;">blank</th>
+        <th style="color: #c1c1c1;">blank</th>
         <th><?php echo $total ?> tiramisus</th>
         <th><?php echo $total*1.235 ?>€ HT</th>
         <th><?php echo $total*1.30 ?>€ TTC</th>
-        <th style="color: #c1c1c1;">blank</th>
-        <th style="color: #c1c1c1;">blank</th>
-        <th style="color: #c1c1c1;">blank</th>
-        <th style="color: #c1c1c1;">blank</th>
-        <th style="color: #c1c1c1;">b</th>
+        <th><a href="paiement.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="valider">Valider le panier et passer au paiement</button></a></th>
       </tr>
     </thead>
   </table>
@@ -105,7 +102,7 @@ session_start();
   ?>
                     </div>
                   </CENTER>
-                <p><a href="paiement.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="valider">Valider le panier et passer au paiement</button></a></p>
+                <p></p>
                 <?php include("footer.php"); ?>
                 </div>
             </main>

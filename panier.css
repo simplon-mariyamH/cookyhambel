@@ -34,11 +34,11 @@
 
 .mdl-data-table {
 	position: relative;
-	width: 80%;
+	width: 90%;
 }
 .mdl-data-table__cell--non-numeric {
 	position: relative;
-	width: 80%;
+	width: 90%;
 }
 
 .mdl-data-table th{
@@ -62,4 +62,8 @@
 .total {
 	background: #c1c1c1;
 	color: white; 
+}
+
+h1 {
+	text-align: center;
 }
