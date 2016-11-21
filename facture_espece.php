@@ -20,8 +20,9 @@ session_start();
             <main class="mdl-layout__content">
                 <div class="page-content">
                 <!-- Your content goes here -->
-                <h1>VOTRE COMMANDE A BIEN ETE PRISE EN COMPTE, ELLE SERA DISPONIBLE DANS MOINS DE 48H</h1>
-                <h3>Une facture vous a été envoyé par mail.</h3>
+                <CENTER><h1 style="font-family: 'Julius Sans One';">VOTRE COMMANDE A BIEN ETE PRISE EN COMPTE, ELLE SERA DISPONIBLE DANS MOINS DE 48H</h1>
+                <h3 style="font-family: 'Julius Sans One';">Une facture vous a été envoyé par mail.<p><a href=""><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="print">Imprimer</button></a></p>
+                </h3></CENTER>
                 <div id="facture">
 
                   <div class="mdl-card__title">
@@ -72,8 +73,7 @@ session_start();
                   $reponse->closeCursor();
                 ?>
                 </div>
-
-                <p><a href=""><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="print">Imprimer</button></a></p>
+                
                 <!-- ENVOIE D'UN MAIL VERS MOI ET LUI -->
                 </div>
             </main>

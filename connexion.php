@@ -11,9 +11,8 @@ session_start();
 	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-pink.min.css" />
 	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="connexion.css">
-	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Pinyon+Script|Rouge+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Roboto|Pinyon+Script|Rouge+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="footer.css">
 	<title>formulaire d'acces aux codes secrets</title>
 </head>
@@ -38,7 +37,7 @@ session_start();
 							<p class="case">Login</p>
 							<p><input type="text" name="mail" /></p>
 
-							<p class="case">Passeword</p>
+							<p class="case">Password</p>
 							<p><input type="password" name="mdp" /></p>
 
 							<p><input type="submit" name="submit" value="Valider" class="btn-login"/></p> 

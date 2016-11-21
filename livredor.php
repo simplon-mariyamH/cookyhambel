@@ -31,8 +31,10 @@ session_start();
 				</form>
 			</div>
 
-    		<?php include("footer.php"); ?>
 		</div>
+
     </main>
+    
+    		<?php include("footer.php"); ?>
 </body>
 </html>

@@ -103,8 +103,9 @@ session_start();
                     </div>
                   </CENTER>
                 <p></p>
-                <?php include("footer.php"); ?>
                 </div>
+                
+                <?php include("footer.php"); ?>
             </main>
     </body>
 </html>

@@ -39,6 +39,18 @@ if (!isset($_SESSION['mail'])){
     top: 3%;
   }
 
+div.connexion{
+  text-align: center;
+}
+
+a {
+  font-family: 'Julius Sans One';
+}
+
+.mdl-layout__header-row a {
+
+  font-size: 1.5em;
+}
 
 
 
@@ -150,8 +162,17 @@ else{
     top: 3%;
   }
 
+div.connexion{
+  text-align: center;
+}
+a {
+  font-family: 'Julius Sans One';
+}
 
+.mdl-layout__header-row a {
 
+  font-size: 1.5em;
+}
 
   </style>
 
@@ -195,7 +216,8 @@ else{
           <a class="mdl-navigation__link" href="commande.php">Commander</a>
           <!-- FAIRE FUSIONNER AVEC LE BADGE DE NOMBRE DE PRODUITS DANS LE PANIER ET REGLER CE NOMBRE<a class="mdl-navigation__link" href="">Panier</a>-->
           <!-- Number badge -->
-          <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a>
+          <!-- <a class="mdl-navigation__link" href="panier.php"><span class="mdl-badge" data-badge="4">Panier</span></a> -->
+          <a class="mdl-navigation__link" href="panier.php">Panier</a>
 
           <a class="mdl-navigation__link" href="livredor.php">Livre d'or</a>
         </nav>

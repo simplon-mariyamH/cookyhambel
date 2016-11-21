@@ -58,9 +58,10 @@ session_start();
                   </div> -->
 
                 </div>
-
+                <div class="btn">
                 <p><a href="facture_paypal.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="paypal">Paiement en ligne via Paypal</button></a></p>
                 <p><a href="facture_espece.php"><button class="mdl-button mdl-js-button mdl-button--accent" type="button" name="espèce">Paiement en espèce à la réception</button></a></p>
+                </div>
                 <!-- ENVOIE D'UN MAIL VERS MOI ET LUI -->
                 </div>
             </main>

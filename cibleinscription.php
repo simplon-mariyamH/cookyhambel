@@ -24,9 +24,8 @@ $portable = $_POST['portable'];
 $raison_sociale = $_POST['raison_sociale'];
 $siret = $_POST['siret'];
 $adresse2 = $_POST['adresse2'];
-$numero2 = $_POST['numero2'];
 $portable2 = $_POST['portable2'];
-$req = $bdd->prepare('INSERT INTO inscription (civilite, nom, prenom, mail, mdp, numero, portable, raison_sociale, siret, adresse2, numero2, portable2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+$req = $bdd->prepare('INSERT INTO inscription (civilite, nom, prenom, mail, mdp, numero, portable, raison_sociale, siret, adresse2, portable2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 $req -> execute(array(
 	$civilite, 
 	$nom, 
@@ -38,7 +37,6 @@ $req -> execute(array(
 	$raison_sociale, 
 	$siret, 
 	$adresse2, 
-	$numero2, 
 	$portable2
 	));
 
