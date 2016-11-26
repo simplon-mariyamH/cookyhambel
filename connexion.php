@@ -14,7 +14,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="connexion.css">
 	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Julius+Sans+One|Roboto|Pinyon+Script|Rouge+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="footer.css">
-	<title>formulaire d'acces aux codes secrets</title>
+	<title>Accueil et connexion</title>
 </head>
 <body>
 	<?php include("menus.php"); ?>
@@ -45,7 +45,7 @@ session_start();
 					</CENTER>
 					<p>
 						Pas encore inscrit ?
-						<a href="inscription.php"> INSCRISVEZ-VOUS ICI !</a>
+						<a href="inscription.php"> INSCRIVEZ-VOUS ICI !</a>
 						<p><a href="" target="_blank">Mot de passe oublié</a></p>
 					</p>
 					<p>

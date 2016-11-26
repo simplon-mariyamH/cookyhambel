@@ -1,10 +1,7 @@
 <?php 
 session_start(); 
 ?>
-<?php 
-require 'dbproduits.class.php';
-$DB = new DB();
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -73,9 +70,6 @@ $DB = new DB();
                           </div>
                         </div>
                     </div>
-                            <!-- <?php $produits=$DB->query('SELECT * FROM produits')?>
-                            <?php foreach ($produits as $produit): ?>
-                            <?php endforeach ?> -->
                 </div>
             </main>
             

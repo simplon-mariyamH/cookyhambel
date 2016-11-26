@@ -18,16 +18,8 @@
             <div class="page-content">
             <!-- Your content goes here -->
             <?php
-				try
-				{
-				// On se connecte à MySQL
-				$bdd = new PDO('mysql:host=localhost;dbname=cooky_ham;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-				}
-				catch(Exception $e)
-				{
-				// En cas d'erreur, on affiche un message et on arrête tout
-				die('Erreur : '.$e->getMessage());
-				}
+				include('database.php');
+				
 				$affichage = $bdd -> query('SELECT * FROM inscription ORDER BY id DESC LIMIT 0, 1');
 
 				$donnees = $affichage -> fetch();
